@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 0 10px;
+}
+
+/* Style for larger screens */
+.cart-row1,
+.cart-row2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    gap: 2px;
+}
+
+.carts {
+    position: relative; /* Required for positioning elements inside */
+    width: 15rem;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px 0 rgba(113, 113, 119, 0.5); /* Base shadow effect */
+    padding: 10px; /* Space for internal content */
+    color: black;
+    cursor: pointer;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    transition: box-shadow 0.5s, transform 0.5s; /* Corrected transition property */
+}
+
+.cart-row1 .carts:hover {
+    box-shadow: 0px 5px px 0 ; /* Updated shadow effect */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.cart-row2 .carts:hover {
+    box-shadow: 0px 5px 0px 0 ; /* Updated shadow effect */
+    transform: translateY(5px); /* Lift effect on hover */
+}
+
+
+/* Style for h3 and h5 */
+.carts h3 {
+    margin: 0;
+    font-size: inherit; /* Inherit font size from .carts */
+}
+
+.carts h5 {
+    margin: 0;
+    font-size: 1rem; /* Adjust as needed */
+}
+
+/* Apply gradient shadow effect to the bottom and right sides */
+.carts::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    background: linear-gradient(90deg, rgb(250, 250, 250) 24%, rgba(255,255,255,1) 86%);
+    background-clip: padding-box; /* Ensures the gradient applies only to the border area */
+    z-index: -1; /* Place behind the content */
+}
+
+.cart-row1 .carts:nth-child(1),
+.cart-row1 .carts:nth-child(2),
+.cart-row1 .carts:nth-child(3) {
+    box-shadow: 0px 5px 10px 0 rgba(113, 113, 119, 0.5) ;
+}
+
+.cart-row2 .carts:nth-child(1),
+.cart-row2 .carts:nth-child(2),
+.cart-row2 .carts:nth-child(3) {
+    box-shadow: 0px 5px 10px 0 rgba(113, 113, 119, 0.5);
+}
+.cart-row2 .carts:nth-child(3),
+.cart-row1 .carts:nth-child(3),
+.cart-row2 .carts:nth-child(1),
+.cart-row2 .carts:nth-child(2),
+.cart{
+    box-shadow: none 10px ;
+}
+
+
+/* Media query for tablet screens */
+@media (max-width: 768px) {
+    .cart-row1,
+    .cart-row2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carts {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .carts::after {
+        display: none; /* Hide gradient shadow on smaller screens */
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .container {
+        margin-left: 0;
+        padding: 0 5px;
+    }
+
+    .carts {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+ .donations .number{
+    color: blue;
+}
+
+ .organizer .number{
+    color: rgb(20, 177, 54);
+}
+
+.latest .number{
+    color: rgb(195, 40, 182);
+}
+
+.members .number{
+    color: rgb(208, 202, 34);
+}
+
+.project .number{
+    color: rgb(28, 212, 215);
+}
+
+.event .number{
+    color: rgb(238, 122, 122);
+}
+
+.detail{
+    font-size: 18px;
+    font-weight: 500;
+}
