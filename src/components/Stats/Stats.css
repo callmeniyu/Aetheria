@@ -1,0 +1,71 @@
+.stats {
+    padding: 2rem 8rem;
+    /* background-image: url("../../assets/images/hero_bg.png");
+    background-size: 80%;
+    background-position: 9rem 0; */
+}
+.stats-main {
+    margin-top: 3rem;
+    display: flex;
+    gap: 3rem;
+
+}
+.stats-left {
+    width: 40%;
+    font-size: 1.2rem;
+}
+.stats-left p{
+    margin-bottom: 2rem;
+}
+.stats-right {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.stats-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 10rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.stats-detail p{
+    color: #535b6c;
+}
+.stats-detail .stats-icon {
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+.stats-events .stats-icon {
+    background-color: #e9eaf8;
+    color: #747ed1;
+}
+.stats-members .stats-icon {
+    background-color: #FAE6E7;
+    color: #E2626B;
+}
+.stats-hours .stats-icon {
+    background-color: #FEF3E4;
+    color: #FAB758;
+}
+.stats-experience .stats-icon {
+    background-color: #E4F1F6;
+    color: #54A8C7;
+}
+.stats-partners .stats-icon {
+    background-color: #F5F5F5;
+    color: #424242;
+}
+.stats-fund .stats-icon {
+    background-color: #E1F0DA;
+    color: #99BC85;
+}
