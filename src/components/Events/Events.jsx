@@ -12,8 +12,8 @@ const Events = () => {
             <SectionTitle text="Events" />
             <h2 className="section-header">What's on Your Mind <br /> Dive in at Our Next Event!</h2>
             <div className="events-main">
-                {events.map((event) => (
-                    <div className="event-container">
+                {events.map((event, i) => (
+                    <div className="event-container" key={i}>
                         <div className="event-container-left">
                             <h3>{event.title}</h3>
                             <p>{event.description}</p>

@@ -7,6 +7,9 @@ import Mission from '../../components/Mission/Mission'
 import Events from '../../components/Events/Events'
 import Blogs from '../../components/Blogs/Blogs'
 import Stats from '../../components/Stats/Stats'
+import Activities from '../../components/Activities/Activities'
+import Team from '../../components/Team/Team'
+import Footer from '../../components/Footer/Footer'
 const Home = () => {
   return (
     <div className='home'>
@@ -17,6 +20,9 @@ const Home = () => {
       <Events />
       <Blogs />
       <Stats />
+      <Activities />
+      <Team />
+      <Footer />
     </div>
   )
 }

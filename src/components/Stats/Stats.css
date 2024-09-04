@@ -1,8 +1,6 @@
 .stats {
     padding: 2rem 8rem;
-    /* background-image: url("../../assets/images/hero_bg.png");
-    background-size: 80%;
-    background-position: 9rem 0; */
+    padding-bottom: 4rem;
 }
 .stats-main {
     margin-top: 3rem;
@@ -34,6 +32,11 @@
     background: white;
     text-align: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.stats-detail h3{
+    font-family: "poppins";
+    font-size: 1.5rem;
+    color: #343F52;
 }
 .stats-detail p{
     color: #535b6c;
@@ -68,4 +71,72 @@
 .stats-fund .stats-icon {
     background-color: #E1F0DA;
     color: #99BC85;
+}
+.stats-shape1{
+    position: absolute;
+    z-index: -1;
+    right: 11vw;
+    top: 636vh;
+    width: 8rem;
+    height: 8rem;
+}
+.stats-shape2{
+    position: absolute;
+    z-index: -1;
+    left: 32.5rem;
+    top: 260.5rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+@media(max-width:1200px){
+    .stats{
+        padding: 2rem 4rem;
+    }
+}
+@media(max-width:1070px){
+    .stats-main{
+        flex-direction: column;
+    }
+    .stats-left{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 0 4rem;
+    }
+    .stats-right{
+        width: 100%;
+        padding: 0 5rem;
+        justify-content: center;
+    }
+    .stats-shape1,
+    .stats-shape2{
+        display: none;
+    }
+}
+@media(max-width:840px){
+    .stats{
+        padding: 2rem 1rem;
+    }
+    .stats-left{
+        padding: 0;
+    }
+    .stats-right{
+        padding: 0;
+        gap: 0.7rem;
+    }
+    .stats-detail{
+        width: 8rem;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    .stats-detail h3{
+        font-size: 1.1rem;
+    }
+    .stats-detail .stats-icon{
+        width: 3rem;
+        height: 3rem;
+        padding: 0.8rem;
+    }
+
 }
